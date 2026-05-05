@@ -1,0 +1,103 @@
+/** font poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #fff;
+}
+
+button {
+  border: 0;
+  outline: none;
+}
+/* --- navagion bar --- */
+nav {
+  background: #fff;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  transition: all 0.3s ease;
+
+  #navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    place-items: center;
+    width: 85%;
+    padding: 12px;
+    margin: auto;
+
+    #navbar__logo {
+      img {
+        width: 140px;
+        height: 70px;
+      }
+    }
+
+    #navbar__links {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      ul {
+        display: flex;
+        list-style: none;
+
+        li {
+          margin-left: 60px;
+
+          a {
+            text-decoration: none;
+            color: #404040;
+            font-weight: 500;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            font-size: 16px;
+            transition: all 0.3s ease;
+          }
+
+          :hover {
+            color: #4169ff;
+          }
+        }
+      }
+
+      #navbar__tools {
+        display: flex;
+        margin-left: 60px;
+        gap: 15px;
+
+        a {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-decoration: none;
+
+          span {
+            font-size: 13px;
+            width: 17px;
+            height: 17px;
+            border-radius: 50%;
+            background: red;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            bottom: 8px;
+            right: 10px;
+          }
+        }
+
+        #wishlist-link {
+          /* margin-left: 15px; */
+        }
+      }
+    }
+  }
+}
